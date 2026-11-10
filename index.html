@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Екатерина Вирченко</title>
+  <style>
+    :root {
+      --bg: #eceff2;
+      --ink: #1a222c;
+      --muted: #56606b;
+      --accent: #1f3a5f;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 72px 24px 48px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+      background: #1a222c;
+      color: #ffffff;
+    }
+    header .tag { color: #9fb3c8; }
+    header p { color: #c5ced8 !important; }
+    .tag {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: normal;
+      margin: 12px 0 8px;
+    }
+    header p { color: var(--muted); font-size: 18px; }
+    main {
+      flex: 1;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+    .card p {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 15px;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tag">Группа 26.Б01-э 2026</div>
+    <h1>Громов Алексей</h1>
+    <p>Студент первого курса экономического факультета</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Обо мне</h2>
+      <p>Изучаю экономику и пробую новые цифровые инструменты на практике.</p>
+    </section>
+    <section class="card">
+      <h2>Этот сайт</h2>
+      <p>Сделан за 20 минут: код хранится на GitHub, публикация — через Vercel.</p>
+    </section>
+    <section class="card">
+      <h2>Контакты</h2>
+      <p>67.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Громов Алексей</footer>
+</body>
+</html>
